@@ -14,6 +14,11 @@ Route::put('/note/update/{note}',[NoteController::class,'update'])->name('note.u
 Route::get('/note/show/{note}',[NoteController::class,'show'])->name('note.show');
 Route::delete('/note/destroy/{note}',[NoteController::class,'destroy'])->name('note.destroy');
 
+// Route::resource('/note',NoteController::class); opcion para no escribir todo lo de arriba
+
 //conjunto de rutas para hacer un CRUD
 //probamos en consola con php artisan route:list
 Route::resource('/post',PostController::class);
+
+//Leer Readme
+
